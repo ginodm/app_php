@@ -37,23 +37,24 @@ Browser → public/index.php → Router → Controller → View → Browser
 ---
 
 ## 📁 Struttura del progetto
-
+```bash
 project-root/
-│
 ├── app/
-│ ├── Controllers/ → Controller applicativi
-│ ├── Models/ → Modelli
-│ └── Views/ → Template delle viste
+│ ├── Controllers/
+│ ├── Models/
+│ └── Views/
 │
-├── core/ → Classi base del framework
-├── public/ → Front Controller (index.php)
-├── config/ → File di configurazione
-├── docker/ → Configurazione ambiente Docker
+├── core/
+├── public/
+│ └── index.php
+│
+├── config/
+├── docker/
 │
 ├── docker-compose.yml
 ├── README.md
 └── LICENSE
-
+```
 
 ---
 
@@ -66,5 +67,5 @@ project-root/
 ### Avvio
 ```bash
 docker-compose up --build
-
+```
 apri il browser su: http://localhost:8080/
