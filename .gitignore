@@ -1,0 +1,23 @@
+# Vendor (Composer - sviluppo futuro)
+vendor/
+
+# Cache / logs
+*.log
+cache/
+tmp/
+
+# Environment
+.env
+
+# IDE
+.kdev4/
+*.kdev4
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
