@@ -69,3 +69,33 @@ project-root/
 docker-compose up --build
 ```
 apri il browser su: http://localhost:8080/
+
+## Esempio di Controller
+```bash
+app/Controllers/HomeController.php
+```
+
+```php
+<?php
+
+class HomeController extends Controller
+{
+    /**
+     * Metodo di default
+     * URL: /
+     */
+    public function index()
+    {
+        // Dati passati alla vista
+        $data = [
+            'title'   => 'Benvenuto nel Framework MVC',
+            'message' => 'Framework MVC didattico sviluppato in PHP'
+        ];
+
+        // Carica la vista "home"
+        $this->view('home', $data);
+    }
+}
+
+```
+
